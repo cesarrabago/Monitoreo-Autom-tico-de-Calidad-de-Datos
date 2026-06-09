@@ -1,4 +1,4 @@
-# Pipeline de Monitoreo de Calidad de Datos 
+#Monitoreo de Calidad de Datos
 
 Plataforma automatizada de monitoreo y calidad de datos que valida registros en PostgreSQL, genera análisis con IA, y dispara alertas multicanal vía Slack, Email y Jira. Simula una arquitectura de DataOps real para supervisión continua de calidad en redes de concesionarios.
 
@@ -16,19 +16,19 @@ Plataforma automatizada de monitoreo y calidad de datos que valida registros en 
 
 ## Arquitectura del Sistema
 
-![Arquitectura del Sistema](over_view.png)
+![Arquitectura del Sistema](screenshots/over_view.png)
 
 ---
 
 ## Vista General del Workflow
 
-![Vista General del Workflow](Workflow.png)
+![Vista General del Workflow](screenshots/Workflow.png)
 
 ---
 
 ## Ejemplo de Reporte Email
 
-![Reporte Email](gmail.png)
+![Reporte Email](screenshots/gmail.png)
 
 ---
 
