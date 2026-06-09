@@ -1,4 +1,4 @@
-# Pipeline de Monitoreo de Calidad de Datos — Red Honda
+# Pipeline de Monitoreo de Calidad de Datos 
 
 Plataforma automatizada de monitoreo y calidad de datos que valida registros en PostgreSQL, genera análisis con IA, y dispara alertas multicanal vía Slack, Email y Jira. Simula una arquitectura de DataOps real para supervisión continua de calidad en redes de concesionarios.
 
@@ -14,9 +14,21 @@ Plataforma automatizada de monitoreo y calidad de datos que valida registros en 
 
 ---
 
-## Vista General del Proyecto
+## Arquitectura del Sistema
 
-![Vista General del Proyecto](screenshots/preview.png)
+![Arquitectura del Sistema](over_view.png)
+
+---
+
+## Vista General del Workflow
+
+![Vista General del Workflow](Workflow.png)
+
+---
+
+## Ejemplo de Reporte Email
+
+![Reporte Email](gmail.png)
 
 ---
 
@@ -119,26 +131,11 @@ CREATE TABLE public.dq_audit_log (
 
 ## Flujo de Alertas
 
-### Score de Calidad
-
 | Score | Estado | Acciones |
 |---|---|---|
 | 90–100 | ✅ Óptimo | Email + Slack informativos |
 | 70–89 | ⚠️ Advertencia | Email + Slack con recomendaciones |
 | < 70 | 🚨 Crítico | Email + Slack urgente + Ticket Jira |
-
-### Ejemplo de Reporte Email
-
-```
-📊 Data Quality Report
-Score: 100/100
-Anomalías: 0
-Fecha: 09/06/2026 20:23
-
-🤖 Análisis AI:
-El reporte muestra resultados óptimos: 6 modelos analizados
-sin anomalías detectadas...
-```
 
 ---
 
@@ -163,4 +160,3 @@ sin anomalías detectadas...
 | P2 | Soporte multi-tenant (múltiples redes de concesionarios) |
 | P2 | Despliegue en la nube (GCP + Cloud SQL) |
 | P3 | Integración con dbt para capa de transformación |
-| P3 | Página de incidente automática en Notion |
