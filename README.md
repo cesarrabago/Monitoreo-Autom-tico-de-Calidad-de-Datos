@@ -1,4 +1,4 @@
-#Monitoreo de Calidad de Datos
+# Monitoreo Automático de Calidad de Datos
 
 Plataforma automatizada de monitoreo y calidad de datos que valida registros en PostgreSQL, genera análisis con IA, y dispara alertas multicanal vía Slack, Email y Jira. Simula una arquitectura de DataOps real para supervisión continua de calidad en redes de concesionarios.
 
